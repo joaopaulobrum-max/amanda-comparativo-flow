@@ -1,0 +1,308 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Amanda · Unidades Ipiranga</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=IBM+Plex+Serif:wght@400;500&display=swap">
+<style>
+/* VOICE work: material de decisão para uma cliente, sóbrio e na marca Meu Novo Endereço
+   IDEA a ficha comparativa que o corretor põe na mesa: as três plantas lado a lado, em escala real
+   PICTURE três unidades desenhadas no tamanho relativo verdadeiro, com o andar marcado na torre e o veredito
+   COLOUR creme da marca, azul profundo como tinta, terracota no que decide, verde para sol norte
+   TYPE Plus Jakarta Sans (títulos e números) + IBM Plex Serif (texto), as fontes da marca
+   LAYOUT laptop: título e conclusão em cima, três colunas iguais abaixo; celular: cada unidade vira uma linha */
+:root{--creme:#F2E9DD;--claro:#FBF7F1;--branco:#fff;--azul:#24405C;--azul2:#3F5E7E;--nevoa:#EAF1F8;--borda:#C9D9E8;--terra:#C1704A;--terra2:#A45B38;--linha:#DED5C9;--div:#E7DFD4;--tinta:#2C2A28;--t2:#55504A;--t3:#6B655D;--verde:#55703F;--verdef:#E6EDDC;--sans:"Plus Jakarta Sans",system-ui,sans-serif;--serif:"IBM Plex Serif",Georgia,serif;color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+body{background:var(--creme);color:var(--tinta);font:16px/1.6 var(--serif);margin:0;overflow-x:clip}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
+.in{max-width:1120px;margin:0 auto}
+h1,h2,h3{font-family:var(--sans);color:var(--azul);margin:0;letter-spacing:-.02em;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(32px,5vw,50px);font-weight:800}
+h2{font-size:clamp(24px,3.2vw,32px);font-weight:700}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+a{color:var(--terra2)}
+.topo{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-block:20px 0}
+.topo img{height:28px;width:auto;display:block}
+.selo{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--azul2);background:var(--branco);border:1px solid var(--linha);border-radius:999px;padding:6px 12px}
+.abre{display:grid;gap:14px;padding-block:28px 22px}
+.abre .lead{font-size:18px;color:var(--t2);max-width:64ch}
+.abre .lead b{font-family:var(--sans);color:var(--azul)}
+.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media(max-width:1180px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.card{background:var(--branco);border:1px solid var(--linha);border-radius:14px;padding:18px;display:grid;gap:14px;align-content:start}
+.card.top{border:2px solid var(--terra)}
+.cab{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+[hidden]{display:none!important}
+.cab small{display:block;font-family:var(--sans);font-size:13px;color:var(--t3);font-weight:500;margin-top:4px}
+.cab h3{font-size:24px}
+.tag{font-family:var(--sans);font-size:13px;font-weight:700;border-radius:999px;padding:4px 10px;white-space:nowrap;background:var(--nevoa);color:var(--azul)}
+.card.top .tag{background:var(--terra);color:#FFF7EF}
+.desenho{display:grid;grid-template-columns:minmax(0,1fr) 34px;gap:12px;align-items:end;height:170px}
+.planta{display:flex;align-items:flex-end;justify-content:center;height:100%}
+.planta i{display:grid;place-items:center;aspect-ratio:1;max-width:100%;background:repeating-linear-gradient(45deg,var(--nevoa) 0 6px,#fff 6px 12px);border:2px solid var(--azul);border-radius:3px;font:800 15px var(--sans);color:var(--azul);font-style:normal;position:relative}
+.planta i.norte{border-top:6px solid var(--verde)}
+.torre{display:flex;flex-direction:column-reverse;gap:2px;height:100%;justify-content:flex-start}
+.torre span{flex:1;background:var(--div);border-radius:1px;max-height:9px}
+.torre span.aqui{background:var(--terra)}
+.legd{font-family:var(--sans);font-size:13px;color:var(--t3);display:flex;justify-content:space-between;gap:8px}
+.preco{font-family:var(--sans);font-weight:800;font-size:clamp(24px,2.1vw,28px);color:var(--azul);letter-spacing:-.02em;line-height:1;white-space:nowrap}
+.preco small{white-space:normal;line-height:1.35;display:block;font-size:13px;font-weight:500;color:var(--t3);letter-spacing:0;margin-top:6px}
+.neg{background:#FBEDE4;border:1.5px solid var(--terra);border-radius:10px;padding:12px 14px;display:grid;gap:2px}
+.neg span{font:700 13px var(--sans);color:var(--terra2)}
+.neg b{font:800 clamp(26px,3vw,32px)/1.05 var(--sans);color:var(--terra2);letter-spacing:-.02em;white-space:nowrap}
+.neg small{font:500 13px var(--sans);color:var(--t2)}
+.fatos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--div);border:1px solid var(--div);border-radius:8px;overflow:hidden}
+.fatos div{background:var(--claro);padding:8px 10px}
+.fatos span{display:block;font-family:var(--sans);font-size:13px;color:var(--t3)}
+.fatos b{font-family:var(--sans);font-size:15px;color:var(--azul)}
+.fatos b.ok{color:var(--verde)}
+.btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:12px 18px;border-radius:999px;background:var(--terra);color:#FFF7EF;font:700 15px var(--sans);text-decoration:none;text-align:center}
+.btn:hover{background:var(--terra2)}
+.leg{font-family:var(--sans);font-size:13px;color:var(--t3);margin-top:12px;display:flex;flex-wrap:wrap;gap:4px 18px}
+.leg i{display:inline-block;width:14px;height:6px;vertical-align:middle;margin-right:6px;border-radius:1px}
+@media(max-width:760px){.cards{grid-template-columns:minmax(0,1fr)}.card{grid-template-columns:minmax(0,1fr) 150px;column-gap:14px}.card>.cab,.card>.fatos,.card>.btn,.card>.neg{grid-column:1/-1}.card>.desenho{grid-column:2;grid-row:2;height:130px}.card>.preco{grid-column:1;grid-row:2;align-self:center}}
+.branco{background:var(--branco)}
+.tab{overflow-x:auto;margin-top:18px;border:1px solid var(--linha);border-radius:12px;background:var(--branco)}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:15px}
+th,td{padding:11px 14px;text-align:right;border-top:1px solid var(--div);white-space:nowrap}
+thead th{border-top:0;color:var(--azul);font-weight:800;background:var(--claro)}
+th:first-child,td:first-child{text-align:left;color:var(--t2);font-weight:500;white-space:normal}
+td{color:var(--azul);font-weight:700;font-variant-numeric:tabular-nums}
+td.melhor{color:var(--verde)}
+td.melhor::after{content:" ●";font-size:10px;vertical-align:middle}
+.nota{font-size:14px;color:var(--t3);margin-top:10px;max-width:80ch}
+@media(max-width:600px){table{font-size:13px}th,td{padding:8px 6px}}
+.dois{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+@media(max-width:700px){.dois{grid-template-columns:minmax(0,1fr)}}
+.perfil{background:var(--branco);border:1px solid var(--linha);border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start}
+.perfil .rec{font-family:var(--sans);font-weight:800;color:var(--terra2);font-size:20px}
+.perfil p{color:var(--t2);font-size:15px}
+.plantas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+@media(max-width:700px){.plantas{grid-template-columns:minmax(0,1fr)}}
+.plantas figure{margin:0;background:var(--branco);border:1px solid var(--linha);border-radius:14px;overflow:hidden;display:grid}
+.plantas button,.gal button{border:0;padding:0;background:none;cursor:zoom-in;display:block;width:100%}
+.plantas img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;display:block}
+figcaption{padding:12px 16px 16px;font-size:15px;color:var(--t2)}
+figcaption b{font-family:var(--sans);color:var(--azul);display:block;font-size:16px}
+.cond{background:var(--azul);color:var(--nevoa)}
+.cond h2{color:#fff}
+.cond .sub{color:var(--borda);margin-top:8px;max-width:70ch}
+.passos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0 0;padding:0;list-style:none}
+@media(max-width:760px){.passos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.passos li{border:1px solid rgba(201,217,232,.35);border-radius:10px;padding:14px;display:grid;gap:4px;align-content:start}
+.passos strong{font:800 22px/1.1 var(--sans);color:#fff}
+.passos span{font:500 14px/1.4 var(--sans);color:var(--borda)}
+.cond .rod{font-size:14px;color:var(--borda);margin-top:16px;max-width:80ch}
+.predio{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:start;margin-top:18px}
+@media(max-width:760px){.predio{grid-template-columns:minmax(0,1fr)}}
+.predio img{width:100%;border-radius:14px;display:block;aspect-ratio:4/3;object-fit:cover}
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 18px}
+.nums strong{display:block;font:800 30px/1 var(--sans);color:var(--azul)}
+.nums span{font:500 14px/1.35 var(--sans);color:var(--t2)}
+.lista{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+.lista li{font:700 14px var(--sans);color:var(--azul);background:var(--branco);border:1px solid var(--borda);border-radius:999px;padding:7px 13px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:18px}
+.gal figure{margin:0;background:var(--branco);border-radius:10px;overflow:hidden;border:1px solid var(--linha)}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.gal figcaption{padding:8px 12px;font:700 14px var(--sans);color:var(--azul)}
+.loc{display:grid;grid-template-columns:repeat(auto-fit,minmax(9em,1fr));gap:10px;margin-top:18px}
+.loc div{background:var(--branco);border:1px solid var(--linha);border-radius:10px;padding:12px 14px}
+.loc strong{display:block;font:800 22px/1.1 var(--sans);color:var(--terra2)}
+.loc span{font:500 14px/1.35 var(--sans);color:var(--t2)}
+.fim{display:grid;gap:14px}
+.fim ul{margin:0;padding-left:20px;color:var(--t2);font-size:14px;display:grid;gap:4px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.zoom{position:fixed;inset:0;z-index:30;background:rgba(20,30,42,.94);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) 16px;cursor:zoom-out}
+.zoom img{max-width:100%;max-height:84vh;border-radius:8px;background:#fff}
+.zoom p{color:#fff;font:700 15px var(--sans);text-align:center;margin-top:10px}
+</style>
+
+<div class="band" style="padding-block:0">
+ <div class="in">
+  <div class="topo"><img src="mne-logo.svg" alt="Meu Novo Endereço" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'Meu Novo Endereço'}))"><span class="selo">Para Amanda · tabela de 21/11/2026</span></div>
+  <div class="abre">
+   <h1>Amanda, qual destas cinco é a sua?</h1>
+   <p class="lead" id="lead">As cinco ficam no mesmo condomínio junto à Av. Ipiranga, perto da PUCRS e do Bourbon, e estão disponíveis na tabela de 21/11.</p>
+  </div>
+  <div class="cards" id="cards"></div>
+  <p class="leg"><span><i style="background:var(--terra)"></i>andar da unidade na torre</span><span><i style="background:var(--verde)"></i>lado com sol norte</span><span>Plantas desenhadas na proporção real da área.</span></p>
+ </div>
+</div>
+
+<div class="band branco" style="margin-top:clamp(28px,4vw,48px)">
+ <div class="in">
+  <h2>Lado a lado, item por item</h2>
+  <p class="nota">O ponto verde marca a melhor unidade em cada linha.</p>
+  <div class="tab"><table id="tabela"></table></div>
+  <p class="nota">Valores com 20% de desconto, a condição que temos hoje para negociar, sobre a tabela da construtora de 21/11/2026. Avaliação de referência informada pela construtora; a Caixa faz a própria avaliação na análise de crédito.</p>
+ </div>
+</div>
+
+<div class="band">
+ <div class="in">
+  <h2>Depende do que você quer fazer com ela</h2>
+  <div class="dois" id="perfis"></div>
+ </div>
+</div>
+
+<div class="band branco">
+ <div class="in">
+  <h2>As plantas</h2>
+  <p class="nota">Toque na planta para ampliar. Exemplos do tipo com sugestão de decoração; os móveis não fazem parte do contrato.</p>
+  <div class="plantas">
+   <figure><button type="button" data-zoom="img/planta-studio-meio.jpg" data-leg="Planta do studio de meio"><img src="img/planta-studio-meio.jpg" alt="Planta humanizada do studio de meio" loading="lazy"></button><figcaption><b>Studios 202, 502, 605 e 606</b>Studio de meio, de 19,52 a 19,88 m². Cozinha, área de dormir e banheiro num ambiente só.</figcaption></figure>
+   <figure><button type="button" data-zoom="img/planta-1d.jpg" data-leg="Planta do apartamento de 1 dormitório"><img src="img/planta-1d.jpg" alt="Planta humanizada do apartamento de 1 dormitório" loading="lazy"></button><figcaption><b>Apto 1105</b>1 dormitório, com o quarto separado da sala e cozinha. De 26,55 a 26,97 m² nesse formato; o 1105 tem 26,95 m².</figcaption></figure>
+  </div>
+ </div>
+</div>
+
+<div class="band cond">
+ <div class="in">
+  <h2>A condição é a mesma nas cinco</h2>
+  <p class="sub">Entrada parcelada direto com a construtora e o restante financiado pela Caixa.</p>
+  <ul class="passos">
+   <li><strong>36x</strong><span>entrada em até 36 parcelas direto com a construtora, com reforços anuais</span></li>
+   <li><strong>Caixa</strong><span>o restante financiado pela Caixa, com taxas a partir de 5% ao ano</span></li>
+   <li><strong>Depois</strong><span>as parcelas do financiamento só começam depois da entrega das chaves</span></li>
+   <li><strong>Carro</strong><span>aceita automóvel como parte do pagamento, na entrada e no saldo</span></li>
+  </ul>
+  <p class="rod">A entrada é montada com você no atendimento, conforme a sua renda. Durante a obra, além da entrada, há os juros de obra: uma parcela pequena cobrada pela Caixa até a entrega. Financiamento sujeito à análise de crédito. Entrega prevista em 36 meses.</p>
+ </div>
+</div>
+
+<div class="band">
+ <div class="in">
+  <h2>O prédio</h2>
+  <div class="predio">
+   <button type="button" data-zoom="img/fachada.jpg" data-leg="Fachada" style="border:0;padding:0;background:none;cursor:zoom-in"><img src="img/fachada.jpg" alt="Fachada do empreendimento"></button>
+   <div>
+    <p style="color:var(--t2)">Duas torres no mesmo condomínio: uma de apartamentos de 1 e 2 dormitórios e uma de studios. As áreas comuns são entregues equipadas e decoradas.</p>
+    <div class="nums" style="margin-top:18px">
+     <div><strong>296</strong><span>unidades em duas torres</span></div>
+     <div><strong>36</strong><span>meses de obra até a entrega prevista</span></div>
+     <div><strong>198</strong><span>apartamentos na torre de 18 andares (onde fica o 1105)</span></div>
+     <div><strong>98</strong><span>studios na torre de 7 andares (onde ficam o 202, o 502, o 605 e o 606)</span></div>
+    </div>
+    <p class="nota">Todas as unidades têm um banheiro. Vendidas sem vaga; box de garagem avulso à venda por R$ 71.750. Acesso por reconhecimento facial, guarita e sala de encomendas.</p>
+   </div>
+  </div>
+  <ul class="lista"><li>Piscina com vestiário</li><li>Espaço fitness</li><li>Coworking</li><li>Minimercado</li><li>Salão de festas</li><li>Espaço gourmet</li><li>Chimarródromo</li><li>Horta comunitária</li><li>Pet place</li><li>Bicicletário</li><li>Sala de encomendas</li><li>Acesso facial</li></ul>
+  <div class="gal" id="gal"></div>
+ </div>
+</div>
+
+<div class="band branco">
+ <div class="in">
+  <h2>A passos do Bourbon Ipiranga</h2>
+  <p class="nota">Bairro pronto, com shopping, hospitais e universidades. Tempos aproximados informados pela construtora.</p>
+  <div class="loc">
+   <div><strong>a passos</strong><span>Bourbon Shopping Ipiranga</span></div>
+   <div><strong>2 min</strong><span>AMRIGS</span></div>
+   <div><strong>4 min</strong><span>Tecnopuc</span></div>
+   <div><strong>4 min</strong><span>Jardim Botânico</span></div>
+   <div><strong>5 min</strong><span>PUCRS</span></div>
+   <div><strong>5 min</strong><span>Hospital São Lucas da PUCRS</span></div>
+  </div>
+ </div>
+</div>
+
+<div class="band">
+ <div class="in fim">
+  <h2>Escolheu? A gente reserva para você</h2>
+  <p style="color:var(--t2);max-width:64ch">A disponibilidade muda rápido no lançamento. A reserva só vale depois que a nossa equipe confirmar com a construtora. WhatsApp: (47) 99633-5801.</p>
+  <div class="ctas" id="ctas"></div>
+  <ul>
+   <li>Valores da tabela de 21/11/2026, sujeitos a alteração sem aviso prévio.</li>
+   <li>Imagens ilustrativas; plantas com sugestão de decoração.</li>
+   <li>Incorporação registrada sob o nº R.2/171.359.</li>
+   <li>Meu Novo Endereço · Joice e João Paulo Lacerda Brum, CRECI 30.272.</li>
+  </ul>
+ </div>
+</div>
+
+<div class="zoom" id="zoom" hidden><div><img id="zoom-img" alt=""><p id="zoom-leg"></p></div></div>
+
+<script>
+{
+const WHATS="5547996335801";
+const U=[
+ {id:"S202",nome:"Studio 202",torre:"Torre dos studios",andares:7,andar:2,tipo:"Studio",area:19.52,sol:"Sul",pos:"Meio",total:270600,avista:259600,fixo:209000,aval:262000},
+ {id:"S502",nome:"Studio 502",torre:"Torre dos studios",andares:7,andar:5,tipo:"Studio",area:19.52,sol:"Sul",pos:"Meio",total:280850,avista:269850,aval:262000},
+ {id:"S605",nome:"Studio 605",torre:"Torre dos studios",andares:7,andar:6,tipo:"Studio",area:19.52,sol:"Norte",pos:"Meio",total:291100,avista:280100,fixo:215880,aval:282000},
+ {id:"S606",nome:"Studio 606",torre:"Torre dos studios",andares:7,andar:6,tipo:"Studio",area:19.88,sol:"Norte",pos:"Meio",total:291100,avista:280100,fixo:215880,aval:282000},
+ {id:"A1105",nome:"Apto 1105",torre:"Torre dos apartamentos",andares:18,andar:11,tipo:"1 dormitório",area:26.95,sol:"Norte",pos:"Meio",total:312625,avista:301625,aval:350000}
+];
+const $=id=>document.getElementById(id);
+const brl=v=>"R$ "+Math.round(v).toLocaleString("pt-BR");
+const m2=v=>v.toLocaleString("pt-BR",{minimumFractionDigits:2})+" m²";
+const DESC=0.20;
+const neg=x=>x.fixo||Math.round(x.avista*(1-DESC));
+const pm=x=>x.total/x.area;
+const pmn=x=>neg(x)/x.area;
+const maxA=Math.max(...U.map(x=>x.area));
+const menorT=U.reduce((a,b)=>neg(a)<neg(b)?a:b);
+const B=Object.fromEntries(U.map(x=>[x.id,x]));
+const ap=B.A1105,s2=B.S202,s5=B.S502,s65=B.S605,s6=B.S606;
+const menorM=U.reduce((a,b)=>pm(a)<pm(b)?a:b);
+const VERED={S202:"Menor valor",S502:"Mesma planta, 5º andar",S605:"Sol norte pelo valor do 502",S606:"Sol norte e mais área",A1105:"Menor valor por m²"};
+const dif=x=>x.id===menorT.id?"o menor valor das cinco":"+ "+brl(neg(x)-neg(menorT))+" que o "+menorT.nome;
+
+$("lead").innerHTML=`Com os 20% de desconto que temos hoje, o <b>Studio 202</b> é o menor valor: ${brl(neg(s2))}. Os <b>Studios 605 e 606</b> saem pelo mesmo valor do 502, ${brl(neg(s65))}, mas com sol norte e um andar acima; o 606 ainda tem 0,36 m² a mais. O <b>Apto 1105</b> sai por ${brl(neg(ap))} e entrega ${Math.round((ap.area/s2.area-1)*100)}% mais área, quarto separado e sol norte: é o menor valor por m² das cinco.`;
+
+const zap=x=>"https://wa.me/"+WHATS+"?text="+encodeURIComponent(`Olá! Aqui é a Amanda. Vi o comparativo das unidades da Ipiranga e quero reservar o ${x.nome} (${x.tipo}, ${m2(x.area)}, valor para negociação de ${brl(neg(x))}). Pode me ajudar?`);
+
+$("cards").innerHTML=U.map(x=>{
+ const lado=Math.sqrt(x.area/maxA)*100;
+ const torre=Array.from({length:x.andares},(_,i)=>`<span class="${i+1===x.andar?"aqui":""}"></span>`).join("");
+ return `<article class="card${x.id==="A1105"?" top":""}">
+  <div class="cab"><div><h3>${x.nome}</h3><small>${x.torre} · ${x.andar}º de ${x.andares} andares</small></div><span class="tag">${VERED[x.id]}</span></div>
+  <div class="desenho"><div class="planta"><i class="${x.sol==="Norte"?"norte":""}" style="height:${lado}%">${x.area.toLocaleString("pt-BR")} m²</i></div><div class="torre" aria-label="${x.andar}º andar de ${x.andares}">${torre}</div></div>
+  <div class="preco">${brl(neg(x))}<small>com 20% de desconto · ${dif(x)}</small></div>
+  <div class="fatos">
+   <div><span>Tipo</span><b>${x.tipo}</b></div>
+   <div><span>Sol</span><b class="${x.sol==="Norte"?"ok":""}">${x.sol}</b></div>
+   <div><span>Área privativa</span><b>${m2(x.area)}</b></div>
+   <div><span>Valor por m²</span><b>${brl(pmn(x))}</b></div>
+  </div>
+  <a class="btn" href="${zap(x)}">Quero o ${x.nome}</a>
+ </article>`}).join("");
+
+const melhor=(f,dir)=>{const v=U.map(f);const b=dir<0?Math.min(...v):Math.max(...v);return U.map(x=>f(x)===b)};
+const L=[
+ ["Torre",x=>x.torre.replace("Torre dos ","")],
+ ["Andar",x=>x.andar+"º de "+x.andares,melhor(x=>x.andar,1)],
+ ["Tipo",x=>x.tipo],
+ ["Área privativa",x=>m2(x.area),melhor(x=>x.area,1)],
+ ["Sol",x=>x.sol,U.map(x=>x.sol==="Norte")],
+ ["Posição no andar",x=>x.pos],
+ ["Valor com 20% de desconto",x=>brl(neg(x)),melhor(neg,-1)],
+ ["Valor por m²",x=>brl(pmn(x)),melhor(pmn,-1)],
+ ["Diferença para o menor valor",x=>x.id===menorT.id?"—":"+ "+brl(neg(x)-neg(menorT))],
+ ["Avaliação de referência",x=>brl(x.aval)],
+ ["Avaliação x valor",x=>(x.aval>=neg(x)?"+ ":"− ")+brl(Math.abs(x.aval-neg(x))),melhor(x=>x.aval-neg(x),1)],
+ ["Vaga de garagem",()=>"box avulso"]
+];
+$("tabela").innerHTML=`<thead><tr><th></th>${U.map(x=>`<th>${x.nome}</th>`).join("")}</tr></thead><tbody>${L.map(([r,f,b])=>`<tr><th scope="row">${r}</th>${U.map((x,i)=>`<td class="${b&&b[i]?"melhor":""}">${f(x)}</td>`).join("")}</tr>`).join("")}</tbody>`;
+
+$("perfis").innerHTML=`
+ <div class="perfil"><h3>Se for para investir e alugar</h3><p class="rec">Studio 202, ou o 606 pelo sol</p>
+  <p>Studio é o que mais procuram estudantes da PUCRS e profissionais do Hospital São Lucas e do Tecnopuc. O 202 tem o menor valor de entrada no negócio, ${brl(neg(s2))}. O 502 é a mesma planta e o mesmo sol, só que no 5º andar, por ${brl(neg(s5)-neg(s2))} a mais.</p>
+  <p>Pelo mesmo valor do 502, o 605 e o 606 têm sol norte e ficam no 6º, penúltimo andar da torre. O 606 ainda tem 0,36 m² a mais: entre os três de ${brl(neg(s6))}, é o que leva vantagem. Em Porto Alegre, sol norte é o lado mais claro e quente no inverno, o que costuma pesar na hora de alugar e de revender.</p></div>
+ <div class="perfil"><h3>Se for para morar</h3><p class="rec">Apto 1105</p>
+  <p>É o único dos cinco com quarto separado da sala: ${m2(ap.area)}, contra 19,52 a 19,88 m² dos studios. Tem sol norte e fica no 11º andar da torre de 18.</p>
+  <p>Custa ${brl(neg(ap)-neg(s65))} a mais que o 605, mas o m² sai ${brl(pmn(s65)-pmn(ap))} mais barato. A avaliação de referência da construtora, ${brl(ap.aval)}, fica ${brl(ap.aval-neg(ap))} acima do valor com desconto, a maior folga das cinco.</p></div>`;
+
+const G=[["aerea","Vista aérea"],["piscina","Piscina"],["fitness","Academia"],["festas","Salão de festas"],["gourmet","Espaço gourmet"],["chimarrodromo","Chimarródromo"],["petplace","Pet place"],["bicicletario","Bicicletário"],["living2d","Sala do 2 dormitórios"],["dormitorio","Dormitório"],["decorado-sala","Decorado 1 dorm.: sala e cozinha"],["decorado-quarto","Decorado 1 dorm.: dormitório"],["decorado-banho","Decorado 1 dorm.: banheiro"]];
+$("gal").innerHTML=G.map(([f,t])=>`<figure><button type="button" data-zoom="img/${f}.jpg" data-leg="${t}"><img src="img/${f}.jpg" alt="${t}" loading="lazy" onerror="this.closest('figure').remove()"></button><figcaption>${t}</figcaption></figure>`).join("");
+
+$("ctas").innerHTML=U.map(x=>`<a class="btn" href="${zap(x)}">Reservar o ${x.nome}</a>`).join("");
+
+document.addEventListener("click",e=>{const z=e.target.closest("[data-zoom]");if(!z)return;$("zoom-img").src=z.dataset.zoom;$("zoom-img").alt=z.dataset.leg;$("zoom-leg").textContent=z.dataset.leg+" · toque para fechar";$("zoom").hidden=false;});
+$("zoom").addEventListener("click",()=>{$("zoom").hidden=true;});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("zoom").hidden=true;});
+}
+</script>
+
+</body></html>
